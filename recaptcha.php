@@ -51,9 +51,8 @@ function recaptcha_validate_captcha()
         $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$recaptcha_private_key.'&response='.$response);
 
         $verifyResponse = json_decode($verifyResponse);
-        if ($verifyResponse->success):
+        if ($verifyResponse->success)
                 return TRUE;
-        else:   
+        else
                 return FALSE;
-        endif;
 }
