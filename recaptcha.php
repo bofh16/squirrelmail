@@ -35,7 +35,7 @@ function recaptcha_show_input_widgets()
                 . "<tr><td colspan=\"2\"><br /><center>\n"
                 . "<table width=\"350\">\n"
                 . "<tr><td><center>\n"
-                . "<div class=\"g-recaptcha\" data-sitekey=$recaptcha_public_key></div>\n";
+                . "<div class=\"g-recaptcha\" data-sitekey=$recaptcha_public_key></div>\n"
                 . "<script src=$recaptcha_url></script>\n"
                 . "</form>\n";
 
