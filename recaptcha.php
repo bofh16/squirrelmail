@@ -31,11 +31,8 @@ function recaptcha_show_input_widgets()
 
         $recaptcha_url = 'https://www.google.com/recaptcha/api.js';
 
-        $output .="<form action=\"\" method=\"post\">\n"
-                . "<tr><td colspan=\"2\"><br /><center>\n"
-                . "<table width=\"350\">\n"
-                . "<tr><td><center>\n"
-                . "<div class=\"g-recaptcha\" data-sitekey=$recaptcha_public_key></div>\n"
+        $output .="<form action=\"\" method=\"post\" name=\"reCAPTCHAv2\">\n"
+                . "<center><br><div class=\"g-recaptcha\" data-sitekey=$recaptcha_public_key></div></center>\n"
                 . "<script src=$recaptcha_url></script>\n"
                 . "</form>\n";
 
